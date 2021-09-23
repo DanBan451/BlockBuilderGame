@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  background-color: #194673;
+}
+body > h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  font-size: 50px;
+  font-family: 'alien_encounters';
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'alien_encounters';
+}
+h2 {
+  margin: 0;
+  text-align: left;
+  color: #ffffff;
+  font-family: 'alien_encounters';
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  width: 592px;
+  height: 755px;
+  margin: 0 auto;
+  gap: 1%;
+  align-self: center;
+}
+.wrapper-board2 {
+  height: min-content;
+  background-color: #0171bc;
+  border: 10px solid #0171bc;
+  border-radius: 8px;
+}
+.wrapper-board2 > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background-color: #1d1d1d;
+  border-radius: 9px;
+  margin-bottom: 10px;
+}
+.wrapper-board {
+  display: flex;
+  background-color: black;
+  border: 10px solid #0171bc;
+  border-radius: 8px;
+  width: auto;
+  overflow: hidden;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-self: center;
+  margin: 0 auto;
+  padding: 0;
+
+  height: 110%;
+  width: 96%;
+  background-color: black;
+  border-radius: 9px;
+  gap: 5px;
+  margin-bottom: 90px;
+}
+.board div {
+  background-color: #1d1d1d;
+}
+.game-over {
+  position: absolute;  
+  left: 0; 
+  right: 0; 
+  top: 25%;  
+  margin-left: auto; 
+  margin-right: auto; 
+  color: red;
+  font-size: 50px;
+  font-family: 'alien_encounters';
+  visibility: hidden;
+}
+
+.display {  
+  background-color: #1d1d1d;
+  border: 10px solid #1d1d1d;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: auto;
+  margin: auto auto;
+  padding: 0;  
+  gap: 5px;  
+  justify-content: center;
+  
+}
+.display-high-score,
+.display-score,
+.display-level {
+  height: 35px;
+  line-height: 40px;
+  color: #00ff00;
+  background-color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: 'alien_encounters';
+  src: url("fonts/SFAlienEncounters-Italic.ttf");
+}
